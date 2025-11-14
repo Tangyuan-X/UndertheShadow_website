@@ -127,11 +127,7 @@
         "affiliation": [
           {
             "@type": "Organization",
-            "name": "School of Computer Science and Technology, Xidian University, China"
-          },
-          {
-            "@type": "Organization",
-            "name": "Guangzhou Institute of Technology, Xidian University, China"
+            "name": "Xidian University, China"
           }
         ]
       },
@@ -181,7 +177,7 @@
       "@type": "Organization",
       "name": "Conference on Neural Information Processing Systems (NeurIPS)"
     },
-    "url": "https://github.com/Tangyuan-X/Fine-grained-Shadow-Detection",
+    "url": "https://github.com/IMU-Group/FGSD",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
     "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
     "abstract": "FULL_ABSTRACT_TEXT_HERE",
@@ -237,29 +233,28 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Under the Shadow: Exploiting Opacity Variation for Fine-grained Shadow Detection
+            <h1 class="title is-1 publication-title" style="font-size: 2.7rem;">Under the Shadow: Exploiting Opacity Variation for Fine-grained Shadow Detection
 </h1>
             <div class="is-size-5 publication-authors">
               <!-- Authors with personal links (update links if available) -->
               <span class="author-block">
-                <a href="#" target="_blank">Xiaotian Qiao</a><sup>1,2</sup>,</span>
+                <a href="#" target="_blank">Xiaotian Qiao</a>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Ke Xu</a><sup>1</sup>,</span>
+                <a href="#" target="_blank">Ke Xu</a>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Xianglong Yang</a><sup>2</sup>,</span>
+                <a href="#" target="_blank">Xianglong Yang</a>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Ruijie Dong</a><sup>1</sup>,</span>
+                <a href="#" target="_blank">Ruijie Dong</a>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Xiaofang Xia</a><sup>1*</sup>,</span>
+                <a href="#" target="_blank">Xiaofang Xia</a>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Jiangtao Cui</a><sup>1*</sup>
+                <a href="#" target="_blank">Jiangtao Cui</a>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <!-- Affiliations and conference info -->
-              <span class="author-block">1 School of Computer Science and Technology, Xidian University, China<br>2 Guangzhou Institute of Technology, Xidian University, China<br>The Thirty-Ninth Annual Conference on Neural Information Processing Systems 2025</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Joint corresponding authors</small></span>
+              <span class="author-block">Xidian University, China</span>
             </div>
 
                   <div class="column has-text-centered">
@@ -288,7 +283,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/Tangyuan-X/Fine-grained-Shadow-Detection" target="_blank"
+                    <a href="https://github.com/IMU-Group/FGSD" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -304,7 +299,16 @@
                   <span class="icon">
                     <i class="fas fa-database"></i>
                   </span>
-                  <span>Dataset Script</span>
+                  <span>Dataset</span>
+
+                <!-- Poster link -->
+                <span class="link-block">
+                  <a href="static/pdfs/Shadow_Poster_v5.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
                 </a>
               </span>
             </div>
@@ -314,23 +318,20 @@
     </div>
   </div>
 </section>
-
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/video.mp4" type="video/mp4">
-      </video>
+      <img src="./static/images/intro5_01.png" />
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Video
+        Given an input image, our goal is to predict a continuous
+opacity mask representing the shadow region,the continuous shadow opacity mask is useful in various
+downstream scene understanding applications.
       </h2>
     </div>
   </div>
 </section>
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -362,21 +363,41 @@ of applications, including shadow removal, shadow editing, and 3D reconstruction
   </div>
 </section>
 <!-- End paper abstract -->
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/Shadow_Poster_v5.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <img src="./static/images/dataset_01.png" />
+      <!-- TODO: Replace with your video description -->
+       <h2  class="subtitle has-text-centered">The FSD dataset contains 2,653 scenes with different
+objects, scenes, and light source properties. Each scene
+contains varied fine-grained shadow characteristics.</h2>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <img src="./static/images/network-4_01.png" />
+      <!-- TODO: Replace with your video description -->
+      <h2  class="subtitle has-text-centered">We propose a new shadow detection method by explicitly capturing shadow position and opacity characteristics.</h2>
+    </div>
+  </div>
+</section>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+  <!-- TODO: Replace with your video description -->
+  <h2 class="title">Video Presentation</h2>
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
 
 
 
@@ -390,12 +411,11 @@ of applications, including shadow removal, shadow editing, and 3D reconstruction
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@inproceedings{Qiao2025UnderTheShadow,
+      <pre id="bibtex-code"><code>@inproceedings{Qiao2025Under,
       title={Under the Shadow: Exploiting Opacity Variation for Fine-grained Shadow Detection},
-      author={Qiao Xiaotian, Xu Ke, Yang Xianglong, Dong Ruijie, Xia Xiaofang, Cui Jiangtao},
-      booktitle={NeurIPS},
+      author={Qiao, Xiaotian and Xu, Ke  and Yang, Xianglong and Dong, Ruijie and Xia, Xiaofang and Cui, Jiangtao },
+      booktitle={Neural Information Processing Systems},
       year={2025},
-      url={https://github.com/Tangyuan-X/Fine-grained-Shadow-Detection}
     }</code></pre>
     </div>
 </section>
